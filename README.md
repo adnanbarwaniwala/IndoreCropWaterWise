@@ -23,27 +23,33 @@ IndoreCropWaterWise offers a user-friendly interface where you can input current
 - Soybean
 - Wheat
 
-### 🌦️ Weather Factor Combinations
-Choose from the following weather factor combinations for accurate ET prediction:
-1. **Mean Temperature (C), Maximum Temperature (C), and Minimum Temperature (C)**
-   - (Accuracy: Moderate)
-   
-2. **Mean Temperature (C), Maximum Temperature (C), Minimum Temperature (C) and Wind Speed (m/s)**
-   - (Accuracy: High)
-   
-3. **Mean Temperature (C), Maximum Temperature (C), Minimum Temperature (C), Wind Speed (m/s), Relative Humidity (%) and Surface Pressure (kPa)**
-   - (Accuracy: Very High)
+The available growth stages include:
+- Intial
+- Mid-Season
+- Late-Season
 
-**Note:** If you choose a different combination of weather factors, you'll get an error. The order of factors is unimportant.
+
+### 🌦️ Weather Factor Combinations
+You can choose from the following weather factor combinations based on data availability:
+1. **Mean Temperature (C), Maximum Temperature (C), and Minimum Temperature (C)**
+   - *Moderate Accuracy*
+     
+2. **Mean Temperature (C), Maximum Temperature (C), Minimum Temperature (C) and Wind Speed (m/s)**
+   - *High Accuracy* 
+     
+3. **Mean Temperature (C), Maximum Temperature (C), Minimum Temperature (C), Wind Speed (m/s), Relative Humidity (%) and Surface Pressure (kPa)**
+   - *Very High Accuracy* 
+
 
 ### 📊 Trained Models
-The project includes trained models to provide accurate ET predictions:
-- **LGBM**: Trained with weather data, providing high accuracy in ET prediction.
-- **Neural Networks**: Offers robust predictions using a range of meteorological factors.
+The project includes 3 trained models trained with over 37 years of weather data:
+- **LGBM**: Trained with weather data including temperature and wind speed, providing high accuracy in ET prediction.
+- **Neural Networks**:
+  - One model is trained only on temperature data for ET predictions
+  - The other model is trained on many weather factors like temperature, wind speed, humidity and pressure for very accurate ET predictions.
 
-## Getting Started
+## Contact
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/IndoreCropWaterWise.git
+For questions or suggestions, please open an issue or contact me directly:
+
+- **Email**: adnanbarwaniwala7@gmail.com
