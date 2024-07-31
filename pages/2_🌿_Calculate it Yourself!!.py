@@ -104,7 +104,6 @@ with col2:
                         possible_weather_factor_choices.index(sorted(weather_factor_choices))
                     )
                     predicted_et0 = model.predict(np.array([model_inputs]))
-                    # st.write(predicted_et0[0])
 
                     if len(predicted_et0.shape) == 1:
                         ETc = calculating_ETc(crop_choice, growth_stage, predicted_et0[0])
