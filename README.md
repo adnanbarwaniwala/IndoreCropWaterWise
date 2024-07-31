@@ -42,12 +42,22 @@ You can choose from the following weather factor combinations based on data avai
 
 
 ### 📊 Trained Models
-The project includes 3 trained models trained with over 37 years of weather data:
+The project includes 3 models trained on over 37 years of weather data:
 - **LGBM**: Trained with weather data including temperature and wind speed, providing high accuracy in ET prediction.
 - **Neural Networks**:
   - One model is trained only on temperature data for ET predictions
   - The other model is trained on many weather factors like temperature, wind speed, humidity and pressure for very accurate ET predictions.
 
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+* **FAO**: For providing crop coefficient values used in ET calculations.
+  - [FAO Crop Coefficients (Kc) Values](https://www.fao.org/4/X0490E/x0490e0b.htm#length%20of%20growth%20stages)
+* **NASA POWER**: For providing historical weather data for the Indore region.
+  - [NASA POWER Data Access Viewer](https://power.larc.nasa.gov/data-access-viewer/)
 ## Contact
 
 For questions or suggestions, please open an issue or contact me directly:
