@@ -6,8 +6,8 @@ possible_weather_factor_choices = [sorted(['Mean Temperature (C)', 'Maximum Temp
                                            'Relative Humidity (%)', 'Surface Pressure (kPa)'])]
 
 factors_comb_mapped_to_model_and_type = {
-    0: ('nn', 'saved_models/nn_temp.keras'),
-    1: ('lgbm', 'saved_models/lgbm_ws.pkl'),
+    0: ('lgbm', 'saved_models/lgbm_temp.pkl'),
+    1: ('nn', 'saved_models/nn_ws.keras'),
     2: ('nn', 'saved_models/nn_all.keras')
 }
 
