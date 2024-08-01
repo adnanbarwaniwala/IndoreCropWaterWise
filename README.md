@@ -4,12 +4,12 @@
 
 ## Project Structure
 
-- **data**: Contains the dataset `final indore weather data.csv` with historical weather data used for training and prediction.
+- **data**: Contains the dataset `indore_weather_with_et0.csv` with historical weather data used for training and prediction.
 - **pages**: Includes Streamlit app pages, such as `2_🌿_Calculate it Yourself!!`, for an interactive user interface.
 - **saved_models**: Stores trained models:
-  - `lgbm_ws.pkl`: LGBM model for ET predictions using the temperature data and windspeed.
+  - `lgbm_temp.pkl`: LGBM model for ET predictions using temperature data only.
   - `nn_all.keras`: Neural Network model for ET prediction using all the available factors.
-  - `nn_temp.keras`: Neural Network model for ET prediction using the temperature data only. 
+  - `nn_ws.keras`: Neural Network model for ET prediction using temperature and wind speed data. 
 - **helper.py**: Consists of variables used in the main file. Used for cleaner code.
 
 ## Features
@@ -43,10 +43,10 @@ You can choose from the following weather factor combinations based on data avai
 
 ### 📊 Trained Models
 The project includes 3 models trained on over 37 years of weather data:
-- **LGBM**: Trained with weather data including temperature and wind speed, providing high accuracy in ET prediction.
+- **LGBM**: Trained with temperature data, providing moderately accuracte ET predictions.
 - **Neural Networks**:
-  - One model is trained only on temperature data for ET predictions
-  - The other model is trained on many weather factors like temperature, wind speed, humidity and pressure for very accurate ET predictions.
+  - One model is trained on temperature and wind speed data for high accuracy ET predictions.
+  - The other model is trained on many weather factors including temperature, wind speed, humidity and pressure for very accurate ET predictions.
 
 ## License
 
@@ -63,3 +63,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 For questions or suggestions, please open an issue or contact me directly:
 
 - **Email**: adnanbarwaniwala7@gmail.com
+
+## 🙏 Thank You
+
+Thank you for spending time on my repo. Hope you enjoyed it!
