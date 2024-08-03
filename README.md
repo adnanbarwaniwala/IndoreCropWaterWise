@@ -1,6 +1,6 @@
 # IndoreCropWaterWise 🌾💧
 
-**IndoreCropWaterWise** is an advanced AI-powered tool designed to predict the evapotranspiration (ET) of various crops specifically in the Indore region. By utilizing machine learning models, including Light Gradient Boosting Machines (LGBM) and Neural Networks, this project offers precise water requirements for crops, aiding farmers and agricultural planners in optimizing irrigation and water management.
+**IndoreCropWaterWise** is an advanced AI-powered tool designed to calculate irrigation requirements (IR) for different types of crops at different stages of growth in Indore by predicting their evapotranspiration (ET) rates. By utilizing complex machine learning models like Light Gradient Boosting Machines (LGBM) and Neural Networks, this project accurately predicts water requirements for crops, aiding farmers and agricultural planners in optimizing irrigation and water management.
 
 ## Project Structure
 
@@ -15,7 +15,7 @@
 ## Features
 
 ### 🚀 Predict ET for Your Crops
-IndoreCropWaterWise offers a user-friendly interface where you can input current weather conditions and select crop type and growth stage to receive precise ET predictions. The available crop types include:
+IndoreCropWaterWise offers a user-friendly interface where you can input current weather conditions incluidng forecasted precipitation and select crop type, its growth stage irrigation type used to receive precise IR predictions. The available crop types include:
 - Chickpeas / Gram
 - Corn / Maize
 - Dry Onions
@@ -28,6 +28,10 @@ The available growth stages include:
 - Mid-Season
 - Late-Season
 
+The available irrigation types are:
+- Drip
+- Sprinkler
+- Surface
 
 ### 🌦️ Weather Factor Combinations
 You can choose from the following weather factor combinations based on data availability:
@@ -47,6 +51,9 @@ The project includes 3 models trained on over 37 years of weather data:
 - **Neural Networks**:
   - One model is trained on temperature and wind speed data for high accuracy ET predictions.
   - The other model is trained on many weather factors including temperature, wind speed, humidity and pressure for very accurate ET predictions.
+
+## Calculating IR
+The predicted ET is run through a series of formulas to calculate a quantity called the *Gross Irrigation Requirement (GIR)* which has the units *mm of water per unit area per day.*
 
 ## License
 
