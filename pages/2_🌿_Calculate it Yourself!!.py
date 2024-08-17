@@ -140,7 +140,7 @@ with col2:
                         predicted_ETo = predicted_ETo[0]
                     else:
                         predicted_ETo = predicted_ETo[0, 0]
-                    ETc = calculating_ETc(crop_choice, growth_stage, predicted_ETo[0])
+                    ETc = calculating_ETc(crop_choice, growth_stage, predicted_ETo)
 
                     # The Crop Water Requirement (CWR) is the ETc in mm/day
                     crop_water_requirement = ETc
@@ -161,11 +161,10 @@ with col2:
                     # If NIR < 0, then the plant will get all of its water from precipitation and does not need to be
                     # irrigated. Hence, the check below is done.
                     if net_irrigation_requirement > 0:
+
+                        # Irrigation systems are not 100% efficient and hence, the NIR is adjusted by taking into account
                         final_irrigation_amount = net_irrigation_requirement / irrigation_efficiency
                         st.success(f"✅ You'll need to irrigate the crop **{final_irrigation_amount:.2f} mm** "
                                    f"of water per unit area of the field per day.")
                     else:
                         st.success(f"✅ Your crop does not need water. It will be adequately irrigated by the rain!")
-
-
-
