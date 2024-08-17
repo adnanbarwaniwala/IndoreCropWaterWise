@@ -1,4 +1,4 @@
-# Indore Crop Water Wise (ICWW)🌾💧
+# IndoreCropWaterWise (ICWW)🌾💧
 
 **IndoreCropWaterWise** is an advanced AI-powered tool designed to calculate irrigation requirements (IR) for different types of crops at different stages of growth in Indore by predicting their evapotranspiration (ET) rates. By utilizing complex machine learning models like Light Gradient Boosting Machines (LGBM) and Neural Networks, this project accurately predicts water requirements for crops, aiding farmers and agricultural planners in optimizing irrigation and water management.
 
