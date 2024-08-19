@@ -69,13 +69,8 @@ st.write("Next, you'll have to enter the forecasted rain for today.")
 # Instructions for data input
 st.subheader("📝 How to Enter Data")
 st.write("""
-After selecting the relevant information, enter today's values for the chosen weather factors and then hit **CALCULATE!!** 
-For today's weather data about Indore, you can use the following website of NASA:
+After selecting the relevant information, enter today's values for the chosen weather factors and then hit **CALCULATE!!*
 """)
-st.markdown("[NASA POWER Data Access Viewer](https://power.larc.nasa.gov/data-access-viewer/)")
-
-# Training data source
-st.write("The training data for the models has also been acquired from this source.")
 
 # Kc values and crop information
 st.subheader("🔍 Important Information")
