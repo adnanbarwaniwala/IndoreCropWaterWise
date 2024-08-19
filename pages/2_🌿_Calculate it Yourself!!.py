@@ -153,10 +153,10 @@ with col2:
                     net_irrigation_requirement = crop_water_requirement - effective_precipitation
 
                     with st.expander('Intermediate Calculation Values'):
-                        st.write(f'**ETo predicted by model:** {predicted_ETo} mm/day')
-                        st.write(f'**CWR:** {ETc} mm/day')
-                        st.write(f'**Peff:** {effective_precipitation} mm/day')
-                        st.write(f'**NIR:** {net_irrigation_requirement} mm/day')
+                        st.write(f'**ETo predicted by model:** {predicted_ETo:.2f} mm/day')
+                        st.write(f'**CWR:** {ETc:.2f} mm/day')
+                        st.write(f'**Peff:** {effective_precipitation:.2f} mm/day')
+                        st.write(f'**NIR:** {net_irrigation_requirement:.2f} mm/day')
 
                     # If NIR < 0, then the plant will get all of its water from precipitation and does not need to be
                     # irrigated. Hence, the check below is done.
