@@ -69,7 +69,7 @@ st.write("Next, you'll have to enter the forecasted rain for today.")
 # Instructions for data input
 st.subheader("📝 How to Enter Data")
 st.write("""
-After selecting the relevant information, enter today's values for the chosen weather factors and then hit **CALCULATE!!*
+After selecting the relevant information, enter today's values for the chosen weather factors and then hit **CALCULATE!!**
 """)
 
 # Kc values and crop information
