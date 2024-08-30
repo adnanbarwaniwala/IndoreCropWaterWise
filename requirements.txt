@@ -3,5 +3,6 @@ scikit-learn
 lightgbm
 pandas
 streamlit
+streamlit_player
 joblib
 numpy
