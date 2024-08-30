@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_player import st_player
 
 st.set_page_config(
     page_title='IndoreCropWaterWise',
@@ -8,6 +9,9 @@ st.set_page_config(
 # Title and Project Introduction
 st.title("IndoreCropWaterWise (ICWW) 🌾💧 - An Intro")
 st.subheader("A Smart Solution for Predicting Irrigation Requirements in Indore")
+
+with st.sidebar:
+    st_player('https://youtu.be/LVbkPZeLh6U')
 
 st.markdown("""
 **IndoreCropWaterWise (ICWW)** is a cutting-edge project designed to predict irrigation requirements (IR) 
