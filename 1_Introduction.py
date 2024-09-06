@@ -11,7 +11,7 @@ st.title("IndoreCropWaterWise (ICWW) 🌾💧 - An Intro")
 st.subheader("A Smart Solution for Predicting Irrigation Requirements in Indore")
 
 with st.sidebar:
-    st_player('https://youtu.be/LVbkPZeLh6U')
+    st_player('https://youtu.be/Dxw4QISiT20')
 
 st.markdown("""
 **IndoreCropWaterWise (ICWW)** is a cutting-edge project designed to predict irrigation requirements (IR) 
